@@ -6,9 +6,14 @@
   },
   "name": "tailwindcss",
   "version": "1.0.0",
+  "homepage": "https://karyna-borysenko.github.io/Santa-s-Residence/",
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss build -i src/main.css -o public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karyna-Borysenko/Santa-s-Residence"
   },
   "author": "",
   "license": "ISC",
