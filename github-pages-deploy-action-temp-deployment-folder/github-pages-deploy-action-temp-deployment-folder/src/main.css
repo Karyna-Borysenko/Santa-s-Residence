@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Сommon ----*/
+.container {
+  @apply ml-auto mr-auto pl-4 pr-4;
+}
+
+.section {
+  @apply pt-7 pb-7;
+}
+
+.secondary-title {
+  @apply text-2xl font-semibold uppercase leading-tight text-center mb-5  dark:text-black;
+}
+
+.third-title {
+  @apply text-xl font-semibold text-center mb-2 dark:text-white;
+}
+
+.text {
+  @apply text-lg font-medium text-center;
+}
+
+/* ---- Header ----*/
+.header-link {
+  @apply inline-block py-4 px-4 text-lg  text-blue-50 font-medium uppercase hover:text-cyan-600 hover:underline hover:decoration-4 hover:underline-offset-8 focus:text-blue-800 focus:underline focus:decoration-4 focus:underline-offset-8;
+}
+
+.header-button {
+  @apply py-1 px-3 ml-2 border-2 rounded-full border-blue-200 text-lg  text-blue-50 hover:border-cyan-600;
+}
+
+/* ---- Main ----*/
+.img {
+  @apply absolute left-0 top-0 w-full h-full;
+}
+
+.fact-card {
+  @apply bg-gradient-to-b from-red-50 to-red-200 flex flex-col items-center justify-center p-8 text-center border-b border-gray-300 md:border-r  dark:bg-gradient-to-b dark:from-gray-500 dark:to-gray-700;
+}
+
+.fact-container {
+  @apply max-w-2xl mx-auto text-gray-500 dark:text-gray-400;
+}
+
+.team-container {
+  @apply w-full bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden;
+}
+
+.team-img {
+  @apply left-0 top-0 w-full h-full z-0 object-cover;
+}
+
+.topic-item {
+  @apply px-1 py-4 border-y border-white hover:border-gray-200;
+}
+
+@layer components {
+  .pagination-item {
+    @apply inline-block py-1 px-3 border text-lg border-gray-300 text-gray-500 hover:bg-blue-200 hover:text-gray-700;
+  }
+}
+.form-field {
+  @apply block w-full px-3 py-1.5 text-2xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+/* ---- Footer ----*/
+.footer-link {
+  @apply inline-block to-gray-500 py-2 hover:text-blue-600;
+}
